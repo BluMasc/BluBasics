@@ -1,0 +1,9 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":  "blubasics:hallucination",
+  "providers": [
+    {
+      "item": "blubasics:spore_mushroom"
+    }
+  ]
+}

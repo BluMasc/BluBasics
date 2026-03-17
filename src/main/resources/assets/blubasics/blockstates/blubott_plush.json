@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north,squish_type=none":   { "model": "blubasics:block/blubott_plush" },
+    "facing=north,squish_type=type1":  { "model": "blubasics:block/blubott_plush_squish1" },
+    "facing=north,squish_type=type2":  { "model": "blubasics:block/blubott_plush_squish2" },
+
+    "facing=south,squish_type=none":   { "model": "blubasics:block/blubott_plush", "y": 180 },
+    "facing=south,squish_type=type1":  { "model": "blubasics:block/blubott_plush_squish1", "y": 180 },
+    "facing=south,squish_type=type2":  { "model": "blubasics:block/blubott_plush_squish2", "y": 180 },
+
+    "facing=east,squish_type=none":    { "model": "blubasics:block/blubott_plush", "y": 90 },
+    "facing=east,squish_type=type1":   { "model": "blubasics:block/blubott_plush_squish1", "y": 90 },
+    "facing=east,squish_type=type2":   { "model": "blubasics:block/blubott_plush_squish2", "y": 90 },
+
+    "facing=west,squish_type=none":    { "model": "blubasics:block/blubott_plush", "y": 270 },
+    "facing=west,squish_type=type1":   { "model": "blubasics:block/blubott_plush_squish1", "y": 270 },
+    "facing=west,squish_type=type2":   { "model": "blubasics:block/blubott_plush_squish2", "y": 270 }
+  }
+}

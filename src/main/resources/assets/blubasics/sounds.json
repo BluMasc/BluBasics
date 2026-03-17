@@ -1,0 +1,56 @@
+{
+  "squish_plushy":{
+    "subtitle": "sound.blubasics.squish_plushy",
+    "sounds": [
+      "blubasics:squish_plushy"
+    ]
+  },
+  "electric": {
+    "subtitle": "sound.blubasics.electric",
+    "sounds": [
+      "blubasics:electric"
+    ]
+  },
+  "bounce":{
+    "subtitle": "sound.blubasics.bounce",
+    "sounds": [
+      "blubasics:bounce"
+    ]
+  },
+  "solar_bug":{
+    "subtitle": "sound.blubasics.solar_bug",
+    "sounds": [
+      "blubasics:solar_beetle/fire_bug"
+    ]
+  },
+  "solar_bug_death":{
+    "subtitle": "sound.blubasics.solar_bug_death",
+    "sounds": [
+      "blubasics:solar_beetle/cicada_death"
+    ]
+  },
+  "solar_bug_hurt":{
+    "subtitle": "sound.blubasics.solar_bug_hurt",
+    "sounds": [
+      "blubasics:solar_beetle/cicada_hurt"
+    ]
+  },
+  "solar_bug_scuttle":{
+    "subtitle": "sound.blubasics.solar_bug_scuttle",
+    "sounds": [
+      "blubasics:solar_beetle/sunbeatle_scuttling"
+    ]
+  },
+  "meteor":{
+    "subtitle": "sound.blubasics.meteor",
+    "sounds": [
+      "blubasics:meteor"
+    ]
+  },
+  "pickerang":{
+    "subtitle": "sound.blubasics.pickerang",
+    "sounds": [
+      "blubasics:pickerang"
+    ]
+  }
+}

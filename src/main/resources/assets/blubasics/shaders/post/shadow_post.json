@@ -1,0 +1,22 @@
+{
+  "targets": ["final"],
+  "passes": [
+    {
+      "name": "blubasics:void_vision",
+      "intarget": "minecraft:main",
+      "outtarget": "final",
+      "auxtargets": [
+        {
+          "name": "DepthSampler",
+          "id": "minecraft:main",
+          "depth": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:blit",
+      "intarget": "final",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}

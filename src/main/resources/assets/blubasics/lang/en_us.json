@@ -1,0 +1,57 @@
+{
+  "itemGroup.blubasics": "BluBasics",
+
+  "block.blubasics.blumasc_plush": "Mini Blumasc",
+  "block.blubasics.blumasc_plush.lore": "Hey that's me. How cute. Place me or put me on your head.",
+  "block.blubasics.rikarashi_plush": "Mini Rikarashi",
+  "block.blubasics.rikarashi_plush.lore": "Thanks Hans for helping with testing this mod and discussing ideas.",
+  "block.blubasics.blubott_plush": "Mini Blubott",
+  "block.blubasics.blubott_plush.lore": "Thanks Anastasia for helping with testing this mod and discussing ideas.",
+  "block.blubasics.jump_mushroom": "Bouncecap Shroom",
+  "block.blubasics.spore_mushroom": "Galaxy Spore Mushroom",
+  "block.blubasics.void_block": "Dark Void",
+
+  "item.blubasics.beetle_horn": "Beetle Horn",
+  "item.blubasics.sun_horn": "Solar Charged Horn",
+  "item.blubasics.lightning_bottle": "Lightning in a Bottle",
+  "item.blubasics.mushroom_skewer": "Mushroom Skewer",
+  "item.blubasics.cooked_mushroom_skewer": "Cooked Mushroom Skewer",
+  "item.blubasics.spine_tree": "Spine Sapling",
+  "item.blubasics.solar_beetle_spawn_egg": "Solar Beetle Spawn Egg",
+  "item.blubasics.chimera_spawn_egg": "Chimera Spawn Egg",
+  "item.blubasics.void_powder": "Void Powder",
+
+  "entity.blubasics.solar_beetle": "Solar Beetle",
+  "entity.blubasics.chimera": "Chimera",
+
+  "entity.blubasics.lightning_arc": "Lightning Arc",
+  "entity.blubasics.meteor": "Meteor",
+  "entity.blubasics.pickaxe_boomerang": "Pickaxe Boomerang",
+  "entity.blubasics.dripstone_spike": "Dripstone Spike",
+  "entity.blubasics.shard_projectile": "Shard",
+
+  "effect.blubasics.fall_immunity": "Fall Immunity",
+  "effect.blubasics.hallucination": "Hallucinations",
+  "effect.blubasics.spiked": "Spiked",
+  "effect.blubasics.void": "Void Vision",
+
+  "effect.blubasics.fall_immunity.description": "You don't take fall damage.",
+  "effect.blubasics.hallucination.description": "Makes you see and hear mobs, that are not there.",
+  "effect.blubasics.spiked.description": "Makes you take damage when moving.",
+  "effect.blubasics.spiked.void": "Makes you take damage when moving.",
+  "effect.selectivepowers.void.description": "Plunges your eyes into the void. Hinders your vision greatly.",
+
+  "sound.blubasics.electric":"Electricity Buzzes",
+  "sound.blubasics.bounce":"Mushroom Bounces",
+  "sound.blubasics.solar_bug": "Solar Bug Buzzes",
+  "sound.blubasics.solar_bug_death": "Solar Bug Death",
+  "sound.blubasics.solar_bug_hurt": "Solar Bug Hurts",
+  "sound.blubasics.solar_bug_scuttle": "Solar Bug Scuttles",
+  "sound.blubasics.meteor": "Meteor Falls",
+  "sound.blubasics.pickerang": "Pickerang Flies",
+
+  "death.attack.spike": "%1$s was pierced to death.",
+
+  "painting.blubasics.flip.title": "Detective Flip",
+  "painting.blubasics.flip.author": "BluMasc"
+}
