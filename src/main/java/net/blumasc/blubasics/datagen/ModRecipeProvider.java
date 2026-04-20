@@ -84,6 +84,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.ORANGE_WOOL)
                 .unlockedBy("has_armor_stand", has(Items.ARMOR_STAND))
                 .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, BaseModBlocks.XTHEHEROLP_PLUSH)
+                .requires(Items.ARMOR_STAND)
+                .requires(Items.GRAY_WOOL)
+                .unlockedBy("has_armor_stand", has(Items.ARMOR_STAND))
+                .save(recipeOutput);
     }
 
     protected static void itemSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

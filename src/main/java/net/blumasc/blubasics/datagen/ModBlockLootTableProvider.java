@@ -20,6 +20,7 @@ public class ModBlockLootTableProvider  extends BlockLootSubProvider {
         dropSelf(BaseModBlocks.BLUBOTT_PLUSH.get());
         dropSelf(BaseModBlocks.BLUMASC_PLUSH.get());
         dropSelf(BaseModBlocks.RIKARASHI_PLUSH.get());
+        dropSelf(BaseModBlocks.XTHEHEROLP_PLUSH.get());
         dropSelf(BaseModBlocks.SPORE_MUSHROOM_BLOCK.get());
         dropSelf(BaseModBlocks.JUMP_MUSHROOM.get());
         dropOther(BaseModBlocks.VOID_BLOCK.get(), ItemStack.EMPTY.getItem());

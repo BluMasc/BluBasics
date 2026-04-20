@@ -25,5 +25,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(BaseModBlocks.SPORE_MUSHROOM_BLOCK.get())
                 .add(BaseModBlocks.JUMP_MUSHROOM.get());
 
+        tag(BlockTags.SWORD_EFFICIENT)
+                .add(BaseModBlocks.SPORE_MUSHROOM_BLOCK.get())
+                .add(BaseModBlocks.JUMP_MUSHROOM.get());
+
     }
 }

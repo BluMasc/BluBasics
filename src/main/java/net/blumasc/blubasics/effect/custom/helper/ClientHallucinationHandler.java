@@ -2,6 +2,7 @@ package net.blumasc.blubasics.effect.custom.helper;
 
 import net.blumasc.blubasics.effect.BaseModEffects;
 import net.blumasc.blubasics.entity.client.fakeMob.FakeMob;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -19,12 +20,14 @@ public class ClientHallucinationHandler {
     private static final List<FakeMob> ACTIVE_MOBS = new ArrayList<>();
 
     public static void tickPlayer(Player player) {
+        if (!isLocalPlayer(player)) return;
         if (!player.hasEffect(BaseModEffects.HALLUCINATION)) {
             clear();
         }
     }
 
     public static void tick(Player player, int amplifier) {
+        if (!isLocalPlayer(player)) return;
         if(!player.hasEffect(BaseModEffects.HALLUCINATION))
         {
             clear();
@@ -88,5 +91,10 @@ public class ClientHallucinationHandler {
         }
 
         return pos;
+    }
+
+    private static boolean isLocalPlayer(Player player) {
+        Minecraft mc = Minecraft.getInstance();
+        return mc.player != null && mc.player.getUUID().equals(player.getUUID());
     }
 }

@@ -21,6 +21,7 @@ public class BaseModSounds {
     public static final Supplier<SoundEvent> SOLAR_BUG_HURT = registerSoundEvent("solar_bug_hurt");
     public static final Supplier<SoundEvent> SOLAR_BUG_SCUTTLE = registerSoundEvent("solar_bug_scuttle");
     public static final Supplier<SoundEvent> PICKERANG = registerSoundEvent("pickerang");
+    public static final Supplier<SoundEvent> EARTH_RUMBLE = registerSoundEvent("earth_rumble");
 
     private static Supplier<SoundEvent> registerSoundEvent(String name){
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath(BluBasicsMod.MODID, name);

@@ -52,5 +52,11 @@
     "sounds": [
       "blubasics:pickerang"
     ]
+  },
+  "earth_rumble":{
+    "subtitle": "sound.blubasics.earth_rumble",
+    "sounds": [
+      "blubasics:earth_rumble"
+    ]
   }
 }

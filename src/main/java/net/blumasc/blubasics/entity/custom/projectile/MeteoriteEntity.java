@@ -11,6 +11,8 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -19,6 +21,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MoverType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.entity.projectile.ThrowableProjectile;
@@ -131,6 +134,11 @@ public class MeteoriteEntity extends ThrowableProjectile {
     }
 
     @Override
+    public boolean isPushedByFluid() {
+        return false;
+    }
+
+    @Override
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         builder.define(RADIUS, 5);
         builder.define(RENDER_BLOCK, Blocks.MAGMA_BLOCK.defaultBlockState());
@@ -227,6 +235,10 @@ public class MeteoriteEntity extends ThrowableProjectile {
                 spawnBottomFlames();
             }
             tickRotation();
+        }else{
+            if(isInWater()){
+                impact(BlockPos.containing(this.position()));
+            }
         }
     }
 
@@ -305,6 +317,8 @@ public class MeteoriteEntity extends ThrowableProjectile {
                     true,
                     Level.ExplosionInteraction.TNT
             );
+        }else{
+            level().playSound((Player)null, center, SoundEvents.GENERIC_EXPLODE.value(), SoundSource.BLOCKS, 0.5f*getRadius(), 0.8f);
         }
 
         if(getEvacuates()) {

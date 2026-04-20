@@ -1,0 +1,7 @@
+{
+  "parent": "blubasics:block/plush_model",
+  "textures": {
+    "0": "blubasics:block/xtheherolp_plush",
+    "particle": "blubasics:block/xtheherolp_plush"
+  }
+}

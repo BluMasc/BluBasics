@@ -32,6 +32,9 @@ public class BaseModBlocks {
     public static  final DeferredBlock<Block> BLUBOTT_PLUSH = registerBlock("blubott_plush",
             () -> new PlushBlock(BlockBehaviour.Properties.of().noOcclusion().strength(0f).sound(SoundType.WOOL)));
 
+    public static  final DeferredBlock<Block> XTHEHEROLP_PLUSH = registerBlock("xtheherolp_plush",
+            () -> new PlushBlock(BlockBehaviour.Properties.of().noOcclusion().strength(0f).sound(SoundType.WOOL)));
+
     public static final DeferredBlock<VoidBlock> VOID_BLOCK = registerBlock("void_block",
             () -> new VoidBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).noOcclusion().noCollission()));
 

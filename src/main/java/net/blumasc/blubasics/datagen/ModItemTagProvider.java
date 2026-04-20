@@ -36,5 +36,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(CuriosTags.BODY)
                 .add(BaseModItems.SPINE_TREE.get());
 
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c","mushrooms")))
+                .add(BaseModBlocks.JUMP_MUSHROOM.asItem())
+                .add(BaseModBlocks.SPORE_MUSHROOM_BLOCK.asItem());
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c","animal_foods")))
+                .addTag(BaseModTags.Items.SOLAR_BEETLE_FOOD);
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c","foods")))
+                .add(BaseModItems.MUSHROOM_SKEWER.get())
+                .add(BaseModItems.COOKED_MUSHROOM_SKEWER.get());
+
     }
 }

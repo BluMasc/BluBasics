@@ -32,6 +32,7 @@ public class BaseModCreativeTabs {
                         output.accept(BaseModBlocks.BLUBOTT_PLUSH);
                         output.accept(BaseModBlocks.RIKARASHI_PLUSH);
                         output.accept(BaseModBlocks.BLUMASC_PLUSH);
+                        output.accept(BaseModBlocks.XTHEHEROLP_PLUSH);
                         output.accept(BaseModBlocks.VOID_BLOCK);
                     }).build());
 

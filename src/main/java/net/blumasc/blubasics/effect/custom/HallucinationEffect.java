@@ -1,6 +1,7 @@
 package net.blumasc.blubasics.effect.custom;
 
 import net.blumasc.blubasics.effect.custom.helper.ClientHallucinationHandler;
+import net.minecraft.client.Minecraft;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -22,6 +23,10 @@ public class HallucinationEffect extends MobEffect {
         if (!(entity instanceof Player player)) return false;
 
         if (player.level().isClientSide) {
+            Minecraft mc = Minecraft.getInstance();
+            if (mc.player == null || !mc.player.getUUID().equals(player.getUUID())) {
+                return true;
+            }
             ClientHallucinationHandler.tick(player, amplifier);
         }
         return true;
