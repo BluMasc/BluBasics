@@ -7,6 +7,7 @@ import net.blumasc.blubasics.entity.BaseModEntities;
 import net.blumasc.blubasics.item.BaseModCreativeTabs;
 import net.blumasc.blubasics.item.BaseModItems;
 import net.blumasc.blubasics.item.dispensebehaviour.LightningBottleDispenserBehavior;
+import net.blumasc.blubasics.network.ModNetwork;
 import net.blumasc.blubasics.sound.BaseModSounds;
 import org.slf4j.Logger;
 
@@ -58,6 +59,7 @@ public class BluBasicsMod {
         BaseModEntities.register(modEventBus);
         BaseModEffects.register(modEventBus);
         BaseModBlockEntities.register(modEventBus);
+        modEventBus.addListener(ModNetwork::register);
 
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
