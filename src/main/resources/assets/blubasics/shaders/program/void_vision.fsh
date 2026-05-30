@@ -15,10 +15,8 @@ float lum(vec3 c) {
 void main() {
     vec2 uv = gl_FragCoord.xy / InSize;
 
-    // Increase this for thicker outlines
     vec2 texel = (1.8 / InSize);
 
-    // Sample neighborhood
     float tl = lum(texture(DiffuseSampler, uv + texel*vec2(-1,-1)).rgb);
     float t  = lum(texture(DiffuseSampler, uv + texel*vec2( 0,-1)).rgb);
     float tr = lum(texture(DiffuseSampler, uv + texel*vec2( 1,-1)).rgb);
@@ -30,32 +28,25 @@ void main() {
     float b  = lum(texture(DiffuseSampler, uv + texel*vec2( 0, 1)).rgb);
     float br = lum(texture(DiffuseSampler, uv + texel*vec2( 1, 1)).rgb);
 
-    // Sobel-ish gradient
     float gx = (tl + SQRT2*l + bl) - (tr + SQRT2*r + br);
     float gy = (tl + SQRT2*t + tr) - (bl + SQRT2*b + br);
 
     float edge = sqrt(gx * gx + gy * gy);
 
-    // Increase contrast dramatically
     edge = pow(edge, 0.65);
 
-    // Lower threshold = more visible edges
     edge = smoothstep(0.08, 0.28, edge);
 
-    // Optional boost
     edge *= 1.6;
 
-    // Stronger neon purple gradient
     vec3 edgeColor = mix(
         vec3(0.25, 0.00, 0.55),
         vec3(0.85, 0.25, 1.00),
         edge
     );
 
-    // Stronger overall intensity
     float strength = 1.2;
 
-    // Depth fade (less aggressive)
     float depth = texture(DepthSampler, uv).r;
     float distanceFade = 1.0 - pow(depth, 2.8);
 
