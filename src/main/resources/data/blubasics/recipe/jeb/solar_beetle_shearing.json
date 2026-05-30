@@ -1,0 +1,22 @@
+{
+  "type": "justenoughbreeding:transformation",
+  "mod": "blubasics",
+  "inputs": [
+    {
+      "item": "minecraft:shears"
+    }
+  ],
+  "input_entity": "blubasics:solar_beetle",
+  "input_spawn_eggs": [
+    {
+      "item": "blubasics:solar_beetle_spawn_egg"
+    }
+  ],
+  "output_entity": "blubasics:solar_beetle",
+  "output_entity_nbt": {},
+  "output_spawn_eggs": [
+    {
+      "item": "blubasics:solar_beetle_spawn_egg"
+    }
+  ]
+}

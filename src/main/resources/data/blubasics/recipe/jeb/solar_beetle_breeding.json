@@ -1,15 +1,10 @@
 {
   "type": "justenoughbreeding:breeding",
   "mod": "blubasics",
-  "mobs": [
-    {
-      "solar_beetle": {
+  "input_entity":"blubasics:solar_beetle",
         "inputs": [
           {
             "tag": "blubasics:solar_beetle_food"
           }
         ]
-      }
-    }
-  ]
 }
